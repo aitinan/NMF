@@ -108,11 +108,7 @@ public class Pca {
 				}
 			}
 		}
-		int[] flagUser = new int[idList.size()];
-		for (int i = 0; i < idList.size(); i++) {
-			flagUser[i] = idList.get(i);
-		}
-		return new FlagBean((int) (trainUserNum * fs * as), flag, flagUser);
+		return new FlagBean((int) (trainUserNum * fs * as), flag, userSDUR);
 	}
 	
 	// 生成规范化的评分矩阵
